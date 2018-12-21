@@ -129,7 +129,16 @@
 
 
 }
-
+#labelchovay{
+    margin-top:1cm;
+    text-align: center;
+    border:solid 1px  rgb(160, 20, 20);
+    background-color:  rgb(160, 20, 20);
+    color:white;
+    margin-left:2cm;
+    margin-right:2cm;
+        
+}
 .nhantien{
     width: 30px;
     height: 30px;
@@ -181,6 +190,17 @@ label{
     margin-left: 2cm;
     margin-right: 2cm;
 }
+.sotiencanvay{
+    color:white;
+    font-size:25px;
+    text-align: center;
+    
+    border:solid 2px rgb(143, 8, 8);
+    background-color:rgb(143, 8, 8);
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
 input[type=text],[type=password] {
     width: 20cm;
     padding: 5px;

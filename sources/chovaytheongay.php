@@ -7,7 +7,7 @@
                 
                 <div class="form_dangky_trang1">
                     <div class="dangkyhoso">
-                        <h2> Cho vay trả góp theo ngày</h2>
+                        <h2 id="labelchovay"> Cho vay trả góp theo ngày</h2>
                         <ul class="content_dangky">
                             <ul class="danhsachgoivay">
                                 <li><label><input type="radio" name="nhantien" class="nhantien" autocomplete="off" value="5" ><span> <span>5 triệu</span></span></label></li>
@@ -22,9 +22,9 @@
                                 <li><label><input type="radio" name="nhantien" class="nhantien" autocomplete="off" value="50" ><span> <span>50 triệu</span></span></label></li>
                                 
                             </ul>
-                            <div class="sotiencanvay"><p>Tôi cần vay<span>5.000.000</span> VNĐ </p></div>
+                            <div class="sotiencanvay"><p>Tôi cần vay:<span>5.000.000</span> VNĐ </p></div>
                             <ul class="songayvay">
-                                <h2 class="note_dangky">Trong:</h2>
+                                <h2 >Trong:</h2>
                                 <li>
                                     <label>
                                     <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="60" >
@@ -55,7 +55,7 @@
                                  </div>
                                  <div class="box-results">
                                     <p>
-                                    <label>Số tiền cầm về:</label>
+                                    <label >Số tiền cầm về:</label>
                                     <span class="stcv">4.000.000</span>"VNĐ"
                                     </p>
                                     <p>
