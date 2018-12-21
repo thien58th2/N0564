@@ -22,7 +22,7 @@
                                 <li><label><input type="radio" name="nhantien" class="nhantien" autocomplete="off" value="50" ><span> <span>50 triệu</span></span></label></li>
                                 
                             </ul>
-                            <div class="sotiencanvay"><p>Tôi cần vay:<span>5.000.000</span> VNĐ </p></div>
+                            <div class="sotiencanvay"><p>Tôi cần vay<span>5.000.000</span> VNĐ </p></div>
                             <ul class="songayvay">
                                 <h2 >Trong:</h2>
                                 <li>
