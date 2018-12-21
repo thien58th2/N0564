@@ -26,7 +26,7 @@
                                             toichobanvay.com
                                         </h2>
                                      </a>
-                                        <img alt="Logo" src="/PROJECT/image/image1.jpg" width="150px" height="120px" />
+                                        <img alt="Logo" src="/PROJECT/image/image1.jpg" width="170px" height="100px" />
                                  
                             </div>
                             <div class="col-md-11">
