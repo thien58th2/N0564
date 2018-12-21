@@ -1,8 +1,8 @@
 <?php   session_start(); ?>
 
-<?php include 'C:\xampp\htdocs\website\include\header.php'; ?>
+<?php include './include/header.php'; ?>
 <?php
- require_once ('C:\xampp\htdocs\website\include\connection.php'); 
+ require_once ('./include/connection.php'); 
  if (isset($_POST["btn_submit"])) {
 	// lấy thông tin người dùng
 	$username = $_POST["username"];

@@ -1,5 +1,5 @@
-<?php require_once ('C:\xampp\htdocs\website\include\connection.php'); ?>
-<?php include 'C:\xampp\htdocs\website\include\header.php'; ?>
+<?php require_once ('./include/connection.php'); ?>
+<?php include './include/header.php'; ?>
 
 <div class="dangky">
     <form action="dangky.php" method="POST">
@@ -23,7 +23,7 @@
                 if($_POST)
                         {
                             $string=$_POST["email"];
-                            $pattern="/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+\.[A-Za-z]{2,6}$/";
+                            $pattern="/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*\@([a-zA-Z0-9_-])+\.[A-Za-z]{2,6}$/";
                             if(preg_match($pattern,$string,$match)==1)
                                 {
                                         echo '<span style=\'color:green\'>**Bạn nhập email hợp lệ!**</span>';

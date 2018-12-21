@@ -1,8 +1,8 @@
 <?php include './include/header.php'; ?>
-<?php require_once ('C:\xampp\htdocs\website\include\connection.php'); ?>
+<?php require_once ('./include/connection.php'); ?>
 <main>
           <div class="image-main">
-              <img alt="anh dep" src="/website/style/image/thanthien.jpg" height="378px" width="1190px"/>
+              <img alt="anh dep" src="./style/image/thanthien.jpg" height="378px" width="1190px"/>
           </div>
           <div class="content-main" >
               <h1 class="head-content">Giới thiệu</h1>
