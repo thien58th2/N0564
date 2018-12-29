@@ -9,7 +9,7 @@ header('Content-Type: text/html; charset=UTF-8');
 if (isset($_POST['dangnhap'])) 
 {
     //Kết nối tới database
-    include('ketnoi.php');
+    require_once ('./include/connection.php'); 
      
     //Lấy dữ liệu nhập vào
     $username = addslashes($_POST['txtUsername']);

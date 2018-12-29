@@ -38,14 +38,12 @@
                                             <li class="nav-item">
                                                 <a class="nav-link" href="home.php" style="border:solid 1px;margin-right:0px">Trang chủ</a>
                                             </li>
+                                            
                                             <li class="nav-item">
-                                                <a class="nav-link " href="#" style="border:solid 1px;margin-left: 20px">Tin tức</a>
+                                                <a class="nav-link" href="cacgoivay.php" style="border:solid 1px;margin-left: 20px" >Các gói vay</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="chovaytheongay.php" style="border:solid 1px;margin-left: 20px" >Gói vay trả góp theo ngày</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="goivayshk.php" style="border:solid 1px;margin-left: 20px">Gói vay theo Sổ hộ khẩu gốc</a>
+                                                <a class="nav-link " href="goivayshk.php" style="border:solid 1px;margin-left: 20px">Đăng ký hồ sơ</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link " href="#" style="border:solid 1px;margin-left: 20px">Quản lý người vay</a>
