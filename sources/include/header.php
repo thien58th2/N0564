@@ -23,7 +23,7 @@
                             <div class="col-md-1">
                                   
                             <a href="index.php" style="text-decoration:none;"> <h2 id="h2-logo">
-                                            toichobanvay.com
+                                            toichobanvay
                                         </h2>
                                      </a>
                                         <img alt="Logo" src="/PROJECT/image/image1.jpg" width="170px" height="100px" />
@@ -39,10 +39,10 @@
                                                 <a class="nav-link" href="home.php" style="border:solid 1px;margin-right:0px">Trang chủ</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="chovaytheongay.php" style="border:solid 1px;margin-left: 20px" >Các gói vay</a>
+                                                <a class="nav-link" href="cacgoivay.php" style="border:solid 1px;margin-left: 20px" >Các gói vay</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="goivayshk.php" style="border:solid 1px;margin-left: 20px">Hồ sơ đăng ký</a>
+                                                <a class="nav-link " href="dankyhoso1.php" style="border:solid 1px;margin-left: 20px">Hồ sơ đăng ký</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link " href="goivayshk.php" style="border:solid 1px;margin-left: 20px">Liên hệ</a>

@@ -33,13 +33,15 @@
     height:12cm;
     width: 14cm;
     
+    
 
 }
 .dangky td{
     font-size: 20px;
     height: 40px;
     vertical-align: center;
-    color:black;
+    color:rgb(177, 16, 16);
+  
 }
 input[type=text],[type=password]{
     border:solid 1px green;

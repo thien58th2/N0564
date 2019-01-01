@@ -1,4 +1,4 @@
-<?php include './include/header.php'; ?>
+<?php include './include/admin-header.php'; ?>
  <main>
      <div class="dangkyhosovay">
         <div  class="content_chovay">
@@ -29,7 +29,7 @@
                                     <label>
                                     <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="60" >
                                     <span>
-                                        50 ngày
+                                        30 ngày
                                      </span>
                                     </label>
                                     </li>
@@ -45,7 +45,7 @@
                                     <label>
                                     <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="150" >
                                     <span>
-                                        100 ngày
+                                        90 ngày
                                      </span>
                                     </label>
                                     </li>

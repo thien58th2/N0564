@@ -45,7 +45,7 @@
      
     //Lưu tên đăng nhập
     $_SESSION['username'] = $username;
-    echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='/'>Về trang chủ</a>";
+    echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='home.php'>Về trang chủ</a>";
     die();
 		}
 	}

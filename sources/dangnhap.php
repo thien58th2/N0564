@@ -11,7 +11,7 @@
 
  <body class="hinhnen">
 	 <div >
- <a href="index.php" style="text-decoration:none;"> <h2 id="h2-logo">
+ <a href="home.php" style="text-decoration:none;"> <h2 id="h2-logo">
                                             toichobanvay.com
                                         </h2>
                                      </a>
@@ -37,7 +37,7 @@
 	    			
 	    		
 			</table>
-			<h3 align="center"><a href="dangky.php" target="blank">Bạn chưa có tài khoản?</a></td></h3>
+			<h3 align="center"><a href="dangky.php" >Bạn chưa có tài khoản?</a></td></h3>
   </fieldset>
   </form>
   </div>

@@ -23,7 +23,7 @@
                             <div class="col-md-1">
                                   
                             <a href="index.php" style="text-decoration:none;"> <h2 id="h2-logo">
-                                            toichobanvay.com
+                                            toichobanvay
                                         </h2>
                                      </a>
                                         <img alt="Logo" src="/PROJECT/image/image1.jpg" width="170px" height="100px" />
@@ -31,22 +31,25 @@
                             </div>
                             <div class="col-md-11">
                             <div style="margin-left:23cm;" >
-                            <img class="img_lienhe" src="./style/image/dienthoai.png" width="30px" height="34px" ><a class="lienhe " href="contact.php" >Liên hệ</a><br>
+                            <img class="img_lienhe" src="./style/image/dienthoai.png" width="30px" height="34px" ><a class="lienhe "  >Số điện thoại</a><br>
                             <h2 style="color:black">0387.631.629</h2>
                             </div>
                                     <ul class="nav">
                                             <li class="nav-item">
-                                                <a class="nav-link" href="home.php" style="border:solid 1px;margin-right:0px">Trang chủ</a>
+                                                <a class="nav-link" href="index.php" style="border:solid 1px;margin-right:0px">Trang chủ</a>
                                             </li>
                                             
                                             <li class="nav-item">
-                                                <a class="nav-link" href="cacgoivay.php" style="border:solid 1px;margin-left: 20px" >Các gói vay</a>
+                                                <a class="nav-link" href="admin-cacgoivay.php" style="border:solid 1px;margin-left: 20px" >Các gói vay</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="goivayshk.php" style="border:solid 1px;margin-left: 20px">Đăng ký hồ sơ</a>
+                                                <a class="nav-link " href="admin-dankyhoso1.php" style="border:solid 1px;margin-left: 20px">Đăng ký hồ sơ</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="#" style="border:solid 1px;margin-left: 20px">Quản lý người vay</a>
+                                                <a class="nav-link " href="quanlinguoivay.php" style="border:solid 1px;margin-left: 20px">Quản lý người vay</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="contact.php" style="border:solid 1px;margin-left: 20px">Liên hệ</a>
                                             </li>
                                             
                                           

@@ -1,5 +1,5 @@
 
-<?php include './include/header.php'; ?>
+<?php include './include/admin-header.php'; ?>
          <main>
           <div class="image-main">
               <img alt="anh dep" src="./style/image/thanthien.jpg" height="378px" width="1225px"/>
