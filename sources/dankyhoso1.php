@@ -1,6 +1,6 @@
 <?php include './include/header.php'; ?>
     <main>
-    <?php include './include/thongtindangky2.php';?>
+    <?php include './include/thongtindangky1.php';?>
         <!-- <div class="thongtindangkipage2">
             <div class="tabledangky">
             <ul>

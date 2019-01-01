@@ -1,0 +1,73 @@
+.dangnhap {
+    padding-top:3cm;
+    margin:auto;
+   
+    width: 10cm;
+    
+    
+
+    
+
+}
+.hinhnen{
+    background-image: url("./image/tien.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.hinhnen2{
+    background-image: url("./image/tien2.jpg");
+    background-color: #cccccc;
+    height:580px;;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.dangky{
+    padding-top:2cm;
+    margin:auto;
+    height:12cm;
+    width: 14cm;
+    
+
+}
+.dangky td{
+    font-size: 20px;
+    height: 40px;
+    vertical-align: center;
+    color:black;
+}
+input[type=text],[type=password]{
+    border:solid 1px green;
+    height: 20px;
+}
+input[type=submit],[type=reset]{
+    border:solid 1px blue;
+    background-color:white;
+    border-radius:10%;
+    height: 30px;
+    width: 2.5cm;
+    color:navy;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+#h2-logo{
+    color: rgb(117, 5, 5);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+    
+}
+.anvao{
+    margin-left:2cm;
+}

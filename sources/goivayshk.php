@@ -49,8 +49,7 @@
                     <b>!!Vay theo Sổ hộ khẩu gốc</b> là khoản vay mà chúng tôi chỉ giữ của bạn sổ hộ khẩu photo.Gói vay giúp khách hàng được nhận tiền về một cách thỏa đáng với lãi suất vô cùng hấp dẫn.
                     </p>
                     </div>
-                    <?php include './include/thongtindangky1.php' ?>
-                    <br>
+                   
                 </div>
                 </form>
             </div>

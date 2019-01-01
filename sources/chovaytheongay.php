@@ -73,7 +73,7 @@
                                  </div>
                         </div>
                     </div>
-                    <?php include './include/thongtindangky1.php'; ?>
+                    
                     <!-- <div class="thongtindangkypage1">
                         <form class="thongtindangkyvay">
                         <div class="content_dangky">

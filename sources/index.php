@@ -2,7 +2,7 @@
 <?php include './include/header.php'; ?>
          <main>
           <div class="image-main">
-              <img alt="anh dep" src="./style/image/thanthien.jpg" height="378px" width="1190px"/>
+              <img alt="anh dep" src="./style/image/thanthien.jpg" height="378px" width="1225px"/>
           </div>
           <div class="content-main" >
               <h1 class="head-content">Giới thiệu</h1>
