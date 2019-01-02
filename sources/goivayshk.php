@@ -22,13 +22,13 @@
                             </ul>
                         </ul>
 
-                        <div class="sotiencanvay"><p>Tôi cần vay:<span> 100.000.000</span> VNĐ </p></div>
-                        <h3>!!Chú ý: Bạn cần có đầy đủ hồ sơ gốc (hộ khẩu, CMT) mới được phép vay gói vay này.</h3>
+                        <div class="sotiencanvay"><p >Tôi cần vay:<span id="sotiencv"></span><span> .000.000</span> VNĐ </p></div>
+                        <h3 style="margin-left:1.5cm;">!!Chú ý: Bạn cần có đầy đủ hồ sơ gốc (hộ khẩu, CMT) mới được phép vay gói vay này.</h3>
                         <ul class="songayvay">
                                 <h2 class="note_dangky">Trong:</h2>
                                 <li>
                                     <label>
-                                    <input type="radio" name="ngayvay1" class="ngayvay1" autocomplete="off" value="50" >
+                                    <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="50" >
                                     <span>
                                         30 ngày
                                      </span>
@@ -61,52 +61,59 @@
     <script>
     var tientattoan = 0;
     var tiencamve=0;
+    var tiencanvay=0;
     
     var tienv=0;
     var ngay=0;
 
     $('.dangkygoivay input[type="radio"]').click(function(){
          tienv= $(this).val();
-         ngay= $('.songayvay input[name="ngayvay1"]:checked').val();
+        //  ngay= $('.songayvay input[name="ngayvay1"]:checked').val();
         tiencamve = tienv*1000;
+        tiencanvay =tienv;
       
       
         $("#stcv1").html(tiencamve);
+        $("#sotiencv").html(tiencanvay);
         
        
 
     })
-    $('.songayvay input[type="radio"]').click(function(){
-         ngay= $(this).val();
-         tienv= $('.danhsachgoivay input[name="nhantien"]:checked').val();
-         tiencamve = tienv*1000;
-        
-       
-        $("#stcv1").html(tiencamve);
+    // $('.songayvay input[type="radio"]').click(function(){
+    //      ngay= $(this).val();
+    //      tienv= $('.danhsachgoivay input[name="nhantien"]:checked').val();
+    //      tiencamve = tienv*1000;
+    //     tiencanvay =tienv;
+      
+      
+    //     $("#stcv1").html(tiencamve);
+    //     $(".sotiencamve").html(tiencanvay);
       
        
-    })
+    // })
     $('.dangkygoivay input[type="radio"]').click(function(){
          tienv= $(this).val();
-         ngay= $('.songayvay input[name="ngayvay1"]:checked').val();
+        //  ngay= $('.songayvay input[name="ngayvay1"]:checked').val();
         
-        tientattoan = ((tienv*0.1)+tienv)*1000;
+        tientattoan =(tienv*1.1)*1000 ;
+        var n=tientattoan;
+        tientattoan=Math.round(n*1000)/1000;
         
         
         $("#sttt1").html(tientattoan);
         
 
     })
-    $('.songayvay input[type="radio"]').click(function(){
-         ngay= $(this).val();
-         tienv= $('.danhsachgoivay input[name="nhantien"]:checked').val();
+    // $('.songayvay input[type="radio"]').click(function(){
+    //      ngay= $(this).val();
+    //      tienv= $('.danhsachgoivay input[name="nhantien"]:checked').val();
          
-        tientattoan = ((tienv*0.1)+tienv)*1000;
+    //     tientattoan = ((tienv*0.1)+tienv)*1000;
         
       
-        $("#sttt1").html(tientattoan);
+    //     $("#sttt1").html(tientattoan);
         
-    })
+    // })
    
    
     //click vao nut vay

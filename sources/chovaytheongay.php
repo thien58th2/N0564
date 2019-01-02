@@ -1,6 +1,6 @@
 <?php include './include/header.php'; ?>
  <main>
-     <div class="dangkyhosovay">
+     <div class="chovaytheongay">
         <div  class="content_chovay">
             <form method="post" name="dangkyhoso" id="dangkyhoso">
                 <input name="action" type="hidden" value="taohoso">
@@ -50,7 +50,7 @@
                                     </li>
                                 </ul>
                                 <div class="boxnotevaytheongay">
-                                <p >Chú ý: Bạn cần có đầy đủ hồ sơ gốc (hộ khẩu, CMT) mới được phép vay gói vay này.</p>
+                                <h3 style="margin-left:1cm">!!!Chú ý: Bạn cần có đầy đủ hồ sơ gốc (hộ khẩu, CMT) mới được phép vay gói vay này.</h3>
                                  </div>
                                  <div class="box-results">
                                     <p>
@@ -71,7 +71,7 @@
                                  <p><b>!!Vay trả góp theo ngày</b> là khoản vay vô cùng tiện lợi và phổ biến của chúng tôi.Gói vay giúp khách hàng tối ưu lãi suất nhất có thể và có thể dễ dàng tất toán khoản vay trong thời gian sớm nhất.</p>
                                  </div>
                         </div>
-                        <input type="button" value='vay' id='btnvay'>
+                        <input type="submit" value='Vay' id='btnvay'>
                     </div>
                     
                     <!-- <div class="thongtindangkypage1">
