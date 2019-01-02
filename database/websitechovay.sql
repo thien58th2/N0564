@@ -26,7 +26,9 @@ create table chovaytratheongay(
     thoigianvay int not null,
     sotiencamve float not null,
     sotientattoat float not null,
-    sotienphaitratrongngay float not null
+    sotienphaitratrongngay float not null,
+       socmt int(11) not null  ,
+     FOREIGN key (socmt) REFERENCES thongtindangky1(socmt)
 )
 insert into chovaytratheongay values (5000000,50,4500000,5000000,100000);
 insert into chovaytratheongay values (5000000,60,4500000,5000000,83333);
@@ -68,6 +70,9 @@ create table chovaytheoshk(
     thoigianvay1 int not null,
     sotiencamve1 float not null,
     sotientattoat1 float not null,
+     socmt int(11) not null  ,
+     FOREIGN key (socmt) REFERENCES thongtindangky1(socmt)
+
    
 )
 insert into chovaytheoshk values (5000000,30,5000000,5500000);
@@ -89,24 +94,33 @@ CREATE table thongtindangky1(
     hovaten VARCHAR(50)  not null ,
     sdt int(11) not null ,
     email VARCHAR(50) not NULL ,
+    facebook VARCHAR(50) not null,
     socmt int(11) not null primary key  ,
     ngaycap DATETIME not null ,
-    noicap VARCHAR(150) not null 
-)
-insert into thongtindangky1 values ('truong thanh thien',01687631629,'thien123@gmail.com',013409012,'2008-5-12','Ha Noi');
-insert into thongtindangky1 values ('do thanh hoa',01687632329,'hoa123@gmail.com',013423012,'2008-5-12','Ha Noi');
-insert into thongtindangky1 values ('truong thi uyen',01687345629,'uyen@gmail.com',013459012,'2008-5-12','Ha Noi')
-create table thongtindangky2(
-    
+    noicap VARCHAR(150) not null,
     sinhnhat datetime not null ,
-    quequan VARCHAR(150) not null ,
-    hokhauthuongtru VARCHAR(150) not null ,
+    noiohientai VARCHAR(150) not null ,
+    hokhautt VARCHAR(150) not null ,
     noilamviec varchar(150) not null ,
     sdtnoilamviec int(11) not null ,
     luong FLOAT(15) not null ,
-    gioitinh VARCHAR(3) not null ,
-    socmt int not null   ,
-    FOREIGN key (socmt) REFERENCES thongtindangky1(socmt)
+    sex VARCHAR(3) not null ,
+    ralative VARCHAR(50) not null ,
+    tenbode VARCHAR(50) not null ,
+    namsinhbo datetime not null  ,
+    congviecbo VARCHAR(50) not null ,
+    diachibo VARCHAR(50) not null ,
+    tenmede VARCHAR(50) not null ,
+    namsinhme datetime not null  ,
+    congviecme VARCHAR(50) not null ,
+    diachime VARCHAR(50) not null ,
+    tennt VARCHAR(50) not null ,
+    namsinhnt datetime not null  ,
+    congviecnt VARCHAR(50) not null ,
+    diachint VARCHAR(50) not null ,
+
+    
+    
 
     
 

@@ -1,4 +1,4 @@
-<div class="thongtindangkypage1">
+<div class="thongtindangky">
                         <form class="thongtindangkyvay">
                         <div class="content_dangky">
                             
@@ -24,9 +24,42 @@
                             <li>
                             <label>*Nơi cấp :        <span><input type="text" name="where_id_card" autocomplete="off" class="inputtext"></span></label>
                             </li>
+                            <li>
+                    <label>*Ngày tháng năm sinh:</label>
+                    <span><input type="date" id="sinhnhat" name="sinhnhat"></span>
+                </li>
+                <li>
+                    <label>*Nơi ở hiện tại:  </label>
+                    <span><input type="text" id="noiohientai" name="noiohientai"></span>
+                </li>
+                <li>
+                    <label>*Hộ khẩu thường trú:</label>
+                    <span><input type="text" id="hokhautt" name="hokhautt"></span>
+                </li>
+                <li>
+                    <label>*Nghề nghiệp hiện tại:</label>
+                    <span><input type="text" id="nghenghiep" name="nghenghiep"></span>
+                </li>
+                <li>
+                    <label>*Địa chỉ nơi làm việc:</label>
+                    <span><input type="text" id="noilamviec" name="noilamviec"></span>
+                </li>
+                <li>
+                    <label>*Số điện thoại nơi làm việc:</label>
+                    <span><input type="text" id="Sdtnoilamviec" name="sdtnoilamviec"></span>
+                </li>
+                <li>
+                    <label>*Mức lương               :</label>
+                    <span><input type="text" id="luong" name="luong"></span>
+                </li>
+                <li>
+                    <label>*Giới tính :  </span>
+                    <span><input type="radio" id="man" name="sex">Nam</span>
+                    <span><input type="radio" id="woman" name="sex">Nữ </span>
+                </li>
                             <!-- <input type="submit" value="Tiếp" id="taohoso"> -->
                             
-                           <div class="tieptuc"> <a href="chovaytheongay2.php" >Tiếp tục</a></div>
+                          
                             </ul></div>
                              
                     </div></form>

@@ -27,7 +27,7 @@
     margin-top:0.5cm;
     text-align: center;
     
-    color:yellow;
+    color:gold;
 }
 .ul-footer{
     margin-left:8.5cm;
@@ -47,7 +47,7 @@
     background-color: white;
 }
 .nav-link:active{
-    background-color: yellow;
+    background-color: gold;
 }
 .lienhe{
     text-decoration: none;
@@ -154,17 +154,12 @@ label{
         z-index: 9;
         cursor: pointer;
         border-color:blue;
-      
+        font-weight: bold;
+        color:gray;
 }
-.tabledangky{
-    background-color: snow;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(151, 11, 11);
 
-    
-   
-}
 .note_dangky{
+    margin-top:30px;
     color:white;
     font-size:25px;
     text-align: center;
@@ -185,7 +180,7 @@ label{
     margin-right: 2cm;
 }
 
-input[type=text],[type=password] {
+/* input[type=text],[type=password] {
     width: 20cm;
     padding: 5px;
     margin-left:4cm;
@@ -203,22 +198,28 @@ input[type=text],[type=password] {
       margin-left:5cm;
 
 
+  } */
+  input[type=text]{
+     height: 40px;
+     box-sizing: border-box;
+     display:block;
+      border:gray solid 0.05px;
+
   }
-  .tieptuc{
-      margin-left:15cm;
-      margin-right: 13cm;
-      border:1px solid red;
-     
-      background-color: rgb(155, 10, 10);
-      font-size:35px;
-        text-decoration: none;
-        
+  input[type=submit]{
+      margin-left:20cm;
+      height: 40px;
+      width: 150px;
+      border:0.5px solid gray;
+      background-color: green;
+      color:snow;
+      font-size: 20px;
+      font-weight: bold;
+
   }
-  .tieptuc a{
-    color:white;
-  }
-  .tieptuc a:hover{
-      color:white;
-      text-decoration:none;
+  .thongtindangky{
+      border:0.25px solid gray;
+      margin-left:80px;
+      margin-right: 80px;
   }
   

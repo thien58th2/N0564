@@ -6,7 +6,7 @@
     <div class="contact-main">
 
         <ul class="contact-ul">
-            <li>Điện thoại:   0387631629.</li>
+            <li>Điện thoại:   0387.888.888.</li>
             <li>Email:   toichobanvay@gmail.com.</li>
             <li><p>Facebook:<a href="#">  https://www.facebook.com/toichobanvay/</a></p></li>
         </ul>

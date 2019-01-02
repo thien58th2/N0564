@@ -32,7 +32,7 @@
                             <div class="col-md-11">
                             <div style="margin-left:23cm;" >
                             <img class="img_lienhe" src="./style/image/dienthoai.png" width="30px" height="34px" ><a class="lienhe "  >Số điện thoại</a><br>
-                            <h2 style="color:black">0387.631.629</h2>
+                            <h2 style="color:black">0387.888.888</h2>
                             </div>
                                     <ul class="nav">
                                             <li class="nav-item">
