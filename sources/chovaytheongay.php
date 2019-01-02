@@ -4,7 +4,6 @@
         <div  class="content_chovay">
             <form method="post" name="dangkyhoso" id="dangkyhoso">
                 <input name="action" type="hidden" value="taohoso">
-                
                 <div class="form_dangky_trang1">
                     <div class="dangkyhoso">
                         <h2 id="labelchovay"> Cho vay trả góp theo ngày</h2>
@@ -27,7 +26,7 @@
                                 <h2 >Trong:</h2>
                                 <li>
                                     <label>
-                                    <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="60" >
+                                    <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="50" >
                                     <span>
                                         50 ngày
                                      </span>
@@ -35,7 +34,7 @@
                                     </li>
                                     <li>
                                     <label>
-                                    <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="100" >
+                                    <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="60" >
                                     <span>
                                         60 ngày
                                      </span>
@@ -43,7 +42,7 @@
                                     </li>
                                     <li>
                                     <label>
-                                    <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="150" >
+                                    <input type="radio" name="ngayvay" class="ngayvay" autocomplete="off" value="100" >
                                     <span>
                                         100 ngày
                                      </span>
@@ -56,15 +55,15 @@
                                  <div class="box-results">
                                     <p>
                                     <label >Số tiền cầm về:</label>
-                                    <span class="stcv">4.000.000</span>"VNĐ"
+                                    <span class="stcv" id="stcv">0</span><span>.000</span>"VNĐ"
                                     </p>
                                     <p>
                                     <label>Số tiền tất toán:</label>
-                                    <span class="stcv">5.000.000</span>"VNĐ"
+                                    <span class="sttt" id="sttt">0</span><span>.000</span>"VNĐ"
                                     </p>
                                     <p>
                                     <label>Số tiền trả góp hằng ngày:</label>
-                                    <span class="stcv">100.000</span>"VNĐ"
+                                    <span class="sttt" id="sttghn">0</span><span>.000</span>"VNĐ"
                                     </p>
 
                                  </div>
@@ -72,6 +71,7 @@
                                  <p><b>!!Vay trả góp theo ngày</b> là khoản vay vô cùng tiện lợi và phổ biến của chúng tôi.Gói vay giúp khách hàng tối ưu lãi suất nhất có thể và có thể dễ dàng tất toán khoản vay trong thời gian sớm nhất.</p>
                                  </div>
                         </div>
+                        <input type="button" value='vay' id='btnvay'>
                     </div>
                     
                     <!-- <div class="thongtindangkypage1">
@@ -114,4 +114,96 @@
 
      </div>
  </main>
+ <script>
+    var tientattoan = 0;
+    var tiencamve=0;
+    var tientra=0;
+    var tienv=0;
+    var ngay=0;
+
+    $('.danhsachgoivay input[type="radio"]').click(function(){
+         tienv= $(this).val();
+         ngay= $('.songayvay input[name="ngayvay"]:checked').val();
+        tiencamve = (tienv*0.9)*1000;
+      
+      
+        $("#stcv").html(tiencamve);
+        
+       
+
+    })
+    $('.songayvay input[type="radio"]').click(function(){
+         ngay= $(this).val();
+         tienv= $('.danhsachgoivay input[name="nhantien"]:checked').val();
+         tiencamve = (tienv*0.9)*1000;
+        
+       
+        $("#stcv").html(tiencamve);
+      
+       
+    })
+    $('.danhsachgoivay input[type="radio"]').click(function(){
+         tienv= $(this).val();
+         ngay= $('.songayvay input[name="ngayvay"]:checked').val();
+        
+        tientattoan = tienv*1000;
+        
+        
+        $("#sttt").html(tientattoan);
+        
+
+    })
+    $('.songayvay input[type="radio"]').click(function(){
+         ngay= $(this).val();
+         tienv= $('.danhsachgoivay input[name="nhantien"]:checked').val();
+         
+        tientattoan = tienv*1000;
+        
+      
+        $("#sttt").html(tientattoan);
+        
+    })
+    $('.danhsachgoivay input[type="radio"]').click(function(){
+         tienv= $(this).val();
+         ngay= $('.songayvay input[name="ngayvay"]:checked').val();
+        
+         tientra=(tienv/ngay)*1000;
+        
+        
+         $("#sttghn").html(tientra);
+        
+
+    })
+    $('.songayvay input[type="radio"]').click(function(){
+         ngay= $(this).val();
+         tienv= $('.danhsachgoivay input[name="nhantien"]:checked').val();
+         
+         tientra=(tienv/ngay)*1000;
+        
+      
+         $("#sttghn").html(tientra);
+        
+    })
+
+   
+    //click vao nut vay
+    $('#btnvay').click(function(){
+       $.ajax({
+           type: "POST",
+           url: "themnguoivay.php",
+           data: {
+            tienvay : tienv,
+            ngayvay : ngay,
+            tiencamve : $("#stcv").html(),
+            tientattoan:$("#sttt").html(),
+            tientra:$("#sttghn").html()
+          
+           },
+           dataType: "text",
+           success: function (response) {
+               alert(response);
+           }
+       }); 
+    })
+ </script>
 <?php include './include/footer.php'; ?>

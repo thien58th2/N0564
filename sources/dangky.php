@@ -49,6 +49,14 @@
                 </tr>
                 <tr>
                     <td>
+                        Nơi ở:
+                    </td>
+                    <td>
+                        <input type="text" name="noio" size="50"  autocomplete="off" placeholder="Mời bạn điền thông tin vào đây..."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         Tên sử dụng:
                     </td>
                     <td>
@@ -57,8 +65,9 @@
                 </tr>
                 
             </table>
-            <input type="submit" value="Đăng ký" class="anvao" />
-            <input type="reset" value="Nhập lại"  class="anvao" />
+            <input type="submit" value="Đăng ký" class="anvao" name="btn_submit" />
+
+            
             </fieldset>
         </form>
         </div>
