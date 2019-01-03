@@ -115,3 +115,67 @@ if (isset($_SESSION['permision']) == true) {
         tientattoan = (tienv*1000000)/ngayv;
         $("#sttt").html(tien);
     })
+    
+<main>
+		
+        <div class="container">
+      <div class="row">
+        <h3> Quản lý con nợ</h3>
+        <table class="table">
+          <caption>Danh sách con nợ đã vay tiền</caption>
+          <thead>
+            <tr>
+            <th bgcolor="#E6E6FA">STT</th>
+            <th bgcolor="#E6E6FA">Tên đăng nhập</th>
+			<th bgcolor="#E6E6FA">Họ và tên</th>
+			<th bgcolor="#E6E6FA">Facebook</th>
+			<th bgcolor="#E6E6FA">Số cmt</th>
+            <th bgcolor="#E6E6FA">Số tiền vay</th>
+            <th bgcolor="#E6E6FA">Thời gian vay</th>
+            <th bgcolor="#E6E6FA">Số tiền phải trả</th>
+            <th bgcolor="#E6E6FA">Số tiền phải trả theo ngày</th>
+			<th bgcolor="#E6E6FA">Nơi ở hiện tại</th>
+            <th bgcolor="#E6E6FA">Hộ khẩu thường trú</th>
+            <th bgcolor="#E6E6FA">Nơi làm việc</th>
+            <th bgcolor="#E6E6FA">Tên bố đẻ</th>
+            <th bgcolor="#E6E6FA">Địa chỉ của bố</th>
+            <th bgcolor="#E6E6FA">Tên mẹ đẻ</th>
+            <th bgcolor="#E6E6FA">Địa chỉ của mẹ</th>
+            <th bgcolor="#E6E6FA">Tên Anh/Chị/Em/Vợ</th>
+            <th bgcolor="#E6E6FA">Địa chỉ  </th>
+            </tr>
+          </thead>
+          <tbody>
+          <?php 
+		while ( $data = mysqli_fetch_array($query) ) {
+			$i = 1;
+			$id = $data['id'];
+	            ?>
+            <tr>
+              <th scope="row">1</th>
+              <td><?php echo $data['username'];?></td>
+              <td><?php echo $data['hovaten'];?></td>
+              <td><?php echo $data['facebook'];?></td>
+              <td><?php echo $data['socmt'];?></td>
+              <td><?php echo $data['sotienvay'];?></td>
+              <td><?php echo $data['songayv'];?></td>
+              <td><?php echo $data['sotientt'];?></td>
+              <td><?php echo $data['sotienphaitra'];?></td>
+              <td><?php echo $data['tenbode'];?></td>
+              <td><?php echo $data['diachibo'];?></td>
+              <td><?php echo $data['tenmede'];?></td>
+              <td><?php echo $data['diachime'];?></td>
+              <td><?php echo $data['tennt'];?></td>
+              <td><?php echo $data['diachint'];?></td>
+              
+            
+             <td> <a href="xoa.php?id=1">Xóa</a></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+ 
+    </div>
+
+    </main>	

@@ -9,18 +9,9 @@ create table users(
     name varchar(50) not null
 
 )
-insert into users values ('1','admin@gmail.com','admin','1','Hanoi',0,'taolathien')
+insert into users values (,'admin@gmail.com','admin','1','Hanoi',0,'taolathien')
 
-create table admin(
-    id_admin int(11)  auto_increment not null PRIMARY KEY;
-    email varchar(255) not null ,
-    username varchar(50) not null ,
-    password varchar(50) not null ,
-    
-    permision TINYINT(4),
-    name_admin varchar(50) not null 
-)
-insert into admin values (1,'123@gmail.com','admin','1',1,'thien')
+
 create table chovaytratheongay(
     sotiencanvay FLOAT not null,
     thoigianvay int not null,

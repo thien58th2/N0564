@@ -46,7 +46,7 @@
                                                 <a class="nav-link " href="admin-dangkyhoso.php" style="border:solid 1px;margin-left: 20px">Đăng ký hồ sơ</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="quanlinguoivay.php" style="border:solid 1px;margin-left: 20px">Quản lý người vay</a>
+                                                <a class="nav-link " href="quanlyconno.php" style="border:solid 1px;margin-left: 20px">Quản lý người vay</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link " href="contact.php" style="border:solid 1px;margin-left: 20px">Liên hệ</a>
