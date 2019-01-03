@@ -12,8 +12,8 @@
 <main>
     <div class="danhsach">
     <div class="conno">
-    <h2>Quản lý con nợ</h2>
-    <table class="danhsachconno" width=50%>
+    <h1 style="text-align:center;color:blue;font-weight:bold">Quản lý con nợ</h1>
+    <table class="danhsachconno" width=100%>
     <h3>Danh sách con nợ đã vay tiền</h3>
     <tr>
             
@@ -23,10 +23,11 @@
 			<th bgcolor="#E6E6FA">Số cmt</th>
             <th bgcolor="#E6E6FA">Số tiền vay</th>
             <th bgcolor="#E6E6FA">Thời gian vay</th>
-            <th bgcolor="#E6E6FA">Số tiền phải trả</th>
+            <th bgcolor="#E6E6FA">Số tiền cầm về</th>
             <th bgcolor="#E6E6FA">Số tiền phải trả theo ngày</th>
 			<th bgcolor="#E6E6FA">Nơi ở hiện tại</th>
             <th bgcolor="#E6E6FA">Hộ khẩu thường trú</th>
+            
             <th bgcolor="#E6E6FA">Nơi làm việc</th>
             <th bgcolor="#E6E6FA">Tên bố đẻ</th>
             <th bgcolor="#E6E6FA">Địa chỉ của bố</th>
@@ -39,36 +40,31 @@
                
              
             <tbody>
-            <?php 
-          while ( $data = mysqli_fetch_array($query) ) {
-              $stt = 1;
-              $id = $data['id'];
-                  ?>
+           
               <tr>
-                <th scope="row"><?php echo $stt; ?></th>
-                <td><?php echo $data['username'];?></td>
-                <td><?php echo $data['hovaten'];?></td>
-                <td><?php echo $data['facebook'];?></td>
-                <td><?php echo $data['socmt'];?></td>
-                <td><?php echo $data['sotienvay'];?></td>
-                <td><?php echo $data['songayv'];?></td>
-                <td><?php echo $data['sotientt'];?></td>
-                <td><?php echo $data['sotienphaitra'];?></td>
-                <td><?php echo $data['tenbode'];?></td>
-                <td><?php echo $data['diachibo'];?></td>
-                <td><?php echo $data['tenmede'];?></td>
-                <td><?php echo $data['diachime'];?></td>
-                <td><?php echo $data['tennt'];?></td>
-                <td><?php echo $data['diachint'];?></td>
+                
+                <td>sam123</td>
+                <td>Lại Văn Sâm</td>
+                <td>Sâm đẹp trai</td>
+                <td>013508098</td>
+                <td>5.000.000</td>
+                <td>50</td>
+                <td>4.500.000</td>
+                <td>100.000</td>
+                <td>Hà Nội</td>
+                <td>Nguyễn Chí Thanh</td>
+                <td>Huỳnh Thúc Kháng</td>
+                <td>Lại Văn Xiêm</td>
+                <td>Hà Nội</td>
+                <td>Trần Thị Mỹ</td>
+                <td>Thanh Hóa</td>
+                <td>Lại Văn Ngọt</td>
+                <td>Hà Nội</td>
                 
               
                <td> <a href="xoa.php?id=1">Xóa</a></td>
               </tr>
-              <?php 
-			$stt++;
-		}
-	?>
-
+           
               
             </tbody>
             

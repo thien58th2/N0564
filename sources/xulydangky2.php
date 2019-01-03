@@ -144,7 +144,7 @@ if (isset($_SESSION['permision']) == true) {
             <th bgcolor="#E6E6FA">Tên Anh/Chị/Em/Vợ</th>
             <th bgcolor="#E6E6FA">Địa chỉ  </th>
             </tr>
-          </thead>
+          
           <tbody>
           <?php 
 		while ( $data = mysqli_fetch_array($query) ) {
@@ -178,4 +178,29 @@ if (isset($_SESSION['permision']) == true) {
  
     </div>
 
-    </main>	
+    </main>	 <?php
+              $sql = "SELECT users.username,thongtindangky1.hovaten,thongtindangky1.facebook,thongtindangky1.socmt,thongtindangky1.sotienvay,thongtindangky1.songayv,thongtindangky1.sotientt,thongtindangky1.sotienphaitra,thongtindangky1.tenbode,thongtindangky1.diachibo,thongtindangky1.tenmede,thongtindangky1.diachime,thongtindangky1.tennt,thongtindangky1.diachint from users,thongtindangky1 where users.id_user=thongtindangky1.id_user";
+                $result= mysql_query($sql)
+
+          ?>
+          <?php   
+    session_start();
+    
+    include './include/connection.php';
+
+        if($_POST(["vay"]=="vay")){
+    $nhantien=$_POST["sotienvay"];
+    $ngayvay=$_POST["ngayvay"];
+    $stcv=$_POST["stcv"];
+    $sttt=$_POST["sttt"];
+    $sttghn=$_POST["sttghn"];
+    $sql="INSERT into chovaytratheongay value ('$nhantien','$ngayvay','$stcv','$sttt','$sttghn',013509098)";
+    mysqli_query($conn,$sql);
+    echo 'Vay thành công';
+
+
+    mysqli_close($conn);
+        }
+
+    
+    ?>

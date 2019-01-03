@@ -1,9 +1,10 @@
 create database website;
 create table users(
-    id_user int(11) unsigned auto_increment not null PRIMARY KEY,
-    email varchar(255) not null ,
-    username varchar(50) not null ,
+    
+    
+    username varchar(50) not null PRIMARY KEY ,
     password varchar(50) not null ,
+    email varchar(255) not null ,
     noio varchar(50) not null ,
     permision TINYINT(4),
     name varchar(50) not null
@@ -87,9 +88,9 @@ CREATE table thongtindangky1(
     email VARCHAR(50) not NULL ,
     facebook VARCHAR(50) not null,
     socmt int(11) not null primary key  ,
-    ngaycap DATETIME not null ,
+    
     noicap VARCHAR(150) not null,
-    sinhnhat datetime not null ,
+   
     noiohientai VARCHAR(150) not null ,
     hokhautt VARCHAR(150) not null ,
     noilamviec varchar(150) not null ,
@@ -98,18 +99,20 @@ CREATE table thongtindangky1(
     sex VARCHAR(3) not null ,
     ralative VARCHAR(50) not null ,
     tenbode VARCHAR(50) not null ,
-    namsinhbo datetime not null  ,
+    
     congviecbo VARCHAR(50) not null ,
     diachibo VARCHAR(50) not null ,
     tenmede VARCHAR(50) not null ,
-    namsinhme datetime not null  ,
+    
     congviecme VARCHAR(50) not null ,
     diachime VARCHAR(50) not null ,
     tennt VARCHAR(50) not null ,
-    namsinhnt datetime not null  ,
+    
     congviecnt VARCHAR(50) not null ,
     diachint VARCHAR(50) not null ,
     username VARCHAR(50) not null,
+  
+    
     FOREIGN KEY username REFERENCES users(username)
 
     

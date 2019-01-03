@@ -50,6 +50,7 @@
                     <div class="boxnotevaytheoshk"><p>
                     <b>!!Vay theo Sổ hộ khẩu gốc</b> là khoản vay mà chúng tôi chỉ giữ của bạn sổ hộ khẩu photo.Gói vay giúp khách hàng được nhận tiền về một cách thỏa đáng với lãi suất vô cùng hấp dẫn.
                     </p>
+                    <input type="submit" value='vay' id='btnvay' name="vay">
                     </div>
                    
                 </div>
