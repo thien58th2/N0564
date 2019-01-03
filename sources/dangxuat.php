@@ -4,4 +4,4 @@ if (isset($_SESSION['username'])){
     unset($_SESSION['username']); // xóa session login
 }
 ?>
-<a href="trangchu.php">HOME</a>
+<a href="home.php">HOME</a>

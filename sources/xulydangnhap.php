@@ -34,11 +34,12 @@ if (isset($_POST["btn_submit"])) {
 			
 			if ($_SESSION['permision']=='0') {
 				
-					
+				echo "<script>javascript: alert('Chào anh admin Thiện đẹp trai')></script>";
 				header('Location: index.php');
 				}
 				else 
 				{	
+					echo "<script>javascript: alert('Chào anh' .$name. 'đẹp trai')></script>";
 					header('Location: home.php');
 				}
 		}

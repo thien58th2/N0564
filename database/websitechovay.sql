@@ -9,7 +9,7 @@ create table users(
     name varchar(50) not null
 
 )
-insert into users values ('2','1234@gmail.com','thien1','123456','Hanoi',1,'thien1')
+insert into users values ('1','admin@gmail.com','admin','1','Hanoi',0,'taolathien')
 
 create table admin(
     id_admin int(11)  auto_increment not null PRIMARY KEY;
@@ -102,7 +102,7 @@ CREATE table thongtindangky1(
     noiohientai VARCHAR(150) not null ,
     hokhautt VARCHAR(150) not null ,
     noilamviec varchar(150) not null ,
-    sdtnoilamviec int(11) not null ,
+    Sdtnoilamviec int(11) not null ,
     luong FLOAT(15) not null ,
     sex VARCHAR(3) not null ,
     ralative VARCHAR(50) not null ,
@@ -118,6 +118,8 @@ CREATE table thongtindangky1(
     namsinhnt datetime not null  ,
     congviecnt VARCHAR(50) not null ,
     diachint VARCHAR(50) not null ,
+    username VARCHAR(50) not null,
+    FOREIGN KEY username REFERENCES users(username)
 
     
     

@@ -76,12 +76,34 @@
 			echo "Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>";
             exit;
 		}else{
+            if($_POST){
+                $string = $_POST['username'];
+                    $pattern = '#^[A-z][\w\.]{5,31}$#';
+                    if(preg_match($pattern, $string, $match) == 1){
+                        $report = '<span style=\'color:#298426\'>Bạn vừa nhập vào một tài khoản hợp lệ!</span>';
+                }
+                else{
+            if($_POST){
+                $string = $_POST['email'];
+                    $pattern = '[a-zA-Z0-9_\.]\@[a-zA-Z]\.[a-zA-Z](\.[a-zA-Z]+)*';
+                    if(preg_match($pattern, $string, $match) == 1){
+                        $report = '<span style=\'color:#298426\'>Bạn vừa nhập vào một email hợp lệ!</span>';
+                }
+                else{
+               
 			$sql = "INSERT INTO users(username, password, email,noio,permision,name  ) VALUES ( '$username', '$password', '$email', '$noio','1', '$name')";
 			// thực thi câu $sql với biến conn lấy từ file connection.php
 			mysqli_query($conn,$sql);
             echo "chúc mừng bạn đã đăng ký thành công";
             echo "<a href='home.php'> Mời bạn đến trang chủ</a>";
+                }
+            }
 		}
-	}
+    }
+}
+    }
+
+
+ 
  
 ?>

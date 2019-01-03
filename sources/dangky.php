@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -21,12 +20,12 @@
                 
                 <tr>
                     <td>
-                        Tên đăng nhập : 
+                        Tên đăng nhập : <?php if(isset($report)){echo $report;}?><br />
                     </td>
                     <td>
                         <input type="text" name="username" size="50" autocomplete="off" placeholder="Mời bạn điền thông tin vào đây..."/>
                     </td>
-                    
+                   
                     
                 </tr>
                 <tr>
@@ -41,7 +40,7 @@
                
                 <tr>
                     <td>
-                        Email :
+                        Email :<?php if(isset($report)){echo $report;}?><br />
                     </td>
                     <td>
                         <input type="text" name="email" size="50"  autocomplete="off" placeholder="Mời bạn điền thông tin vào đây..."/>

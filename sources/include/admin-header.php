@@ -31,7 +31,7 @@
                             </div>
                             <div class="col-md-11">
                             <div style="margin-left:23cm;" >
-                            <img class="img_lienhe" src="./style/image/dienthoai.png" width="30px" height="34px" ><a class="lienhe "  >Số điện thoại</a><br>
+                            <img class="img_lienhe" src="./style/image/dienthoai.png" style="margin-left:0.5cm" width="30px" height="34px" ><a class="lienhe "  >Số điện thoại</a><br>
                             <h2 style="color:black">0387.631.629</h2>
                             </div>
                                     <ul class="nav">
@@ -43,7 +43,7 @@
                                                 <a class="nav-link" href="admin-cacgoivay.php" style="border:solid 1px;margin-left: 20px" >Các gói vay</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="admin-dankyhoso1.php" style="border:solid 1px;margin-left: 20px">Đăng ký hồ sơ</a>
+                                                <a class="nav-link " href="admin-dangkyhoso.php" style="border:solid 1px;margin-left: 20px">Đăng ký hồ sơ</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link " href="quanlinguoivay.php" style="border:solid 1px;margin-left: 20px">Quản lý người vay</a>

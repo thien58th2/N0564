@@ -71,7 +71,7 @@
                             <li>
                              <label>*Tên bố đẻ:
                             <span><input type="text" id="tenbode" name="tenbode" size="100"></span></label>
-                            </li>\
+                            </li>
 
                             <li>
                             <li>
@@ -86,7 +86,7 @@
                             </li>
                             <label>*Tên mẹ đẻ:
                             <span><input type="text" id="tenbode" name="tenmede" size="100"></span></label>
-                            </li>\
+                            </li>
 
                             <li>
                             <li>
