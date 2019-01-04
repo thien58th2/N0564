@@ -22,7 +22,7 @@
                         <div class="row">
                             <div class="col-md-1">
                                   
-                            <a href="index.php" style="text-decoration:none;"> <h2 id="h2-logo">
+                            <a href="home.php" style="text-decoration:none;"> <h2 id="h2-logo">
                                             toichobanvay
                                         </h2>
                                      </a>
